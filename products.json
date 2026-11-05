@@ -1,0 +1,29 @@
+{
+  "productos": [
+    {
+      "id": "1",
+      "nombre": "Arroz",
+      "precio": 3000,
+      "stock": 10
+    },
+    {
+      "nombre": "Leche",
+      "stock": 3,
+      "precio": 9600,
+      "id": "2"
+    },
+    {
+      "nombre": "Huevos",
+      "stock": 10,
+      "precio": 393,
+      "id": "3"
+    },
+    {
+      "nombre": "arrkr",
+      "stock": 2,
+      "precio": 2000,
+      "id": "l7u6uFN0pTs"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

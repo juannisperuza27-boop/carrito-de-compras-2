@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <style>
+        body {
+            font-family: Times New Roman, serif;
+            margin: 20px;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        ul {
+            margin-bottom: 30px;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+        .detalle-link {
+            color: blue;
+            text-decoration: underline;
+            margin-left: 10px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: inline-block;
+            width: 60px;
+        }
+        .form-group input {
+            padding: 3px;
+            width: 200px;
+        }
+        .botones-container {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        button {
+            padding: 3px 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Listado Productos</h1>
+    
+    <!-- La lista de productos -->
+    <div id="productos"></div>
+
+    <!-- Formulario -->
+    <div id="formularioProducto">
+        <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre">
+        </div>
+        <div class="form-group">
+            <label for="stock">Stock</label>
+            <input type="number" id="stock" min="0">
+        </div>
+        <div class="form-group">
+            <label for="precio">Precio</label>
+            <input type="number" id="precio" min="0">
+        </div>
+        
+        <!-- Botones -->
+        <div class="botones-container">
+            <button id="btnCrear">Crear</button>
+            <button id="btnActualizar" style="display: none;">Actualizar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
